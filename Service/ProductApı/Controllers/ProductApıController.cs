@@ -17,6 +17,7 @@ namespace ProductApı.Controllers
         public ProductApıController(IProductRepository productRepository)
         {
             _productRepository= productRepository;
+            this._response = new ResponseDto();
         }
         [HttpGet]
         public async Task<object> Get()
