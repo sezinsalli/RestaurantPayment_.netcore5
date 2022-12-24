@@ -33,7 +33,6 @@ namespace UI.Controllers
             }
             return View(list);
         }
-
         
         public async Task<IActionResult> Details(int productId)
         {

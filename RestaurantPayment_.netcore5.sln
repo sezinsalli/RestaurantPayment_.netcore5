@@ -5,11 +5,13 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{421600F7-A71A-4F7C-A833-3DE45693E410}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{6C1D13EB-4480-4A06-AA2E-3BC11D3E57A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{6C1D13EB-4480-4A06-AA2E-3BC11D3E57A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{36DF095C-C8E2-4FD7-84D9-DA878FC5119D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApı", "Service\ProductApı\ProductApı.csproj", "{7B8918C0-180C-4ABA-985E-9A06E9E3B075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApı", "Service\ProductApı\ProductApı.csproj", "{7B8918C0-180C-4ABA-985E-9A06E9E3B075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartAPI", "Service\ShoppingCartAPI\ShoppingCartAPI.csproj", "{7B0D6766-8B44-4BF3-AEBA-71F3477487B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{7B8918C0-180C-4ABA-985E-9A06E9E3B075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B8918C0-180C-4ABA-985E-9A06E9E3B075}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B8918C0-180C-4ABA-985E-9A06E9E3B075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0D6766-8B44-4BF3-AEBA-71F3477487B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0D6766-8B44-4BF3-AEBA-71F3477487B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0D6766-8B44-4BF3-AEBA-71F3477487B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0D6766-8B44-4BF3-AEBA-71F3477487B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6C1D13EB-4480-4A06-AA2E-3BC11D3E57A2} = {421600F7-A71A-4F7C-A833-3DE45693E410}
 		{7B8918C0-180C-4ABA-985E-9A06E9E3B075} = {36DF095C-C8E2-4FD7-84D9-DA878FC5119D}
+		{7B0D6766-8B44-4BF3-AEBA-71F3477487B0} = {36DF095C-C8E2-4FD7-84D9-DA878FC5119D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1AE7A39-AED6-4E99-B006-54689633967C}
