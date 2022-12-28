@@ -1,6 +1,6 @@
 ﻿namespace UI.Models
 {
-    public class CartDeatailsDto
+    public class CartDetailsDto
     {
         public int CartDetailsId { get; set; }
         public int CartHeaderId { get; set; }

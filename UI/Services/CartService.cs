@@ -14,27 +14,32 @@ namespace UI.Services
             _clientFactory = clientFactory;
         }
 
-        public async Task<T> AddToCartAsync<T>(CartDto cartDto, string token = null)
+        public async Task<T> AddToCartAsync<T>(CartDto cartDto)
         {
             return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType=SD.ApiType.POST,
                 Data = cartDto,
                 Url=SD.ShoppingCartAPIBase+"/api/cart/AddCart",
-                AccessToken=token
+                AccessToken=""
 
             });
         }
-      
 
-        public async Task<T> GetCartByUserIdAsync<T>(string userId, string token = null)
+
+        public async Task<T> GetCartByUserIdAsync<T>(string userId)
         {
             return await this.SendAsync<T>(new ApiRequest
             {
                 ApiType=SD.ApiType.GET,
                 Url=SD.ShoppingCartAPIBase+"/api/cart/GetCart/"+userId,
-                AccessToken=token
+                AccessToken=null
             });
+        }
+
+        public Task<T> GetCartByUserIdAsync<T>(string userId, string token = null)
+        {
+            throw new System.NotImplementedException();
         }
 
         public async Task<T> RemoveFromCartAsync<T>(int CartId, string token = null)
